@@ -78,11 +78,11 @@
 							<a id="cat-btn-dsk" class="mb-0" href="<?= base_url() ?>about">Sobre</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a id="cat-btn-dsk" class="mb-0" href="<?= base_url() ?>contact">Contato</a>
+							<a id="cat-btn-dsk" class="mb-0" href="#contato">Contato</a>
 						</li>
 						<li class="mr-5 d-none d-xl-block">
-							<a class="mb-0" href="">
-								<img src="<?= base_url();  ?>/library/img/github.svg" alt="github">
+							<a class="mb-0" href="https://github.com/czarist/pat" target="_blank">
+								<img src=" <?= base_url();  ?>/library/img/github.svg" alt="github">
 							</a>
 						</li>
 					</ul>
@@ -96,13 +96,13 @@
 						<a id="home-btn-mob" class="mb-0" href="<?= base_url(); ?>">Home</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a id="cat-btn-mob" class="text-left" href="<?= base_url() ?>categories">Sobre</a>
+						<a id="cat-btn-mob" class="text-left" href="<?= base_url() ?>about">Sobre</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a id="cat-btn-mob" class="text-left" href="<?= base_url() ?>categories">Sobre</a>
+						<a id="cat-btn-mob" class="text-left" href="#contato">Contato</a>
 					</li>
 					<li class="mb-3 d-flex">
-						<a class="mb-0" href="">
+						<a class="mb-0" href="https://github.com/czarist/pat" target="_blank">
 							<img src="<?= base_url();  ?>/library/img/github.svg" alt="github">
 						</a>
 					</li>
@@ -110,11 +110,18 @@
 			</nav>
 		</header>
 		<?php if ($general == 'home') { ?>
-			<section id="search-zone">
+			<section id="search-zone" class=" d-flex justify-content-center align-items-center">
 				<div class="container">
-					<div class="row">
+					<div class="row justify-content-start align-items-center">
 						<div class="col-12 col-xl-6">
-
+							<select id="location-select" name="regioes" id="regioes">
+								<option selected disabled>Selecionar por Região</option>
+								<option value="norte">NORTE</option>
+								<option value="nordeste">NORDESTE</option>
+								<option value="centro-oeste">CENTRO-OESTE</option>
+								<option value="sudeste">SUDESTE</option>
+								<option value="sul">SUL</option>
+							</select>
 						</div>
 					</div>
 				</div>
