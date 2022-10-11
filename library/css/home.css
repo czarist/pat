@@ -1,0 +1,17 @@
+/* home CSS */
+
+#quote-list {
+	padding-top: 2pc;
+	padding-bottom: 2pc;
+}
+
+#quote-list iframe {
+	width: 80%;
+	height: 40pc;
+}
+
+section#search-zone {
+	height: 8pc;
+	background-color: white;
+	width: 100%;
+}
